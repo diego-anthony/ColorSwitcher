@@ -4,8 +4,39 @@
              xmlns:local="clr-namespace:ColorSwitcher"
              x:Class="ColorSwitcher.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <StackLayout>
+        <BoxView
+            x:Name="BoxColor"
+            Color="Black"
+            HeightRequest="250"/>
+        <Label
+            Margin="25,15,0,0"
+            Text="Rojo"/>
+        <Slider
+            x:Name="sldRojo"
+            Margin="25,0,0,0"
+            Value="0"/>
+        <Label
+            Margin="25,15,0,0"
+            Text="Verde"/>
+        <Slider
+            x:Name="sldVerde"
+            Margin="25,0,0,0"
+            Value="0"/>
+        <Label
+            Margin="25,15,0,0"
+            Text="Azul"/>
+        <Slider
+            Margin="25,0,0,0"
+            x:Name="sldAzul"
+            Value="0"/>
+        <Label
+            Margin="25,15,0,0"
+            Text="Código Hexadecimal"/>
+        <Entry
+            x:Name="codHexa"
+            IsEnabled="False"
+            Margin="25,0,0,0"></Entry>
+    </StackLayout>
 
 </ContentPage>
